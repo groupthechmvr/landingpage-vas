@@ -44,15 +44,10 @@
             padding: 0 2rem;
         }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
         .logo img {
-          height: 65px;
-    max-height: 100%;
+            width: 300px;
+            height: 50px;
+            max-height: 100%;
         }
 
         .logo h1 {
@@ -599,6 +594,11 @@
             background: linear-gradient(135deg, var(--primary), var(--secondary));
         }
 
+        .contact p{
+            color: white;
+        }
+
+ 
         .contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
