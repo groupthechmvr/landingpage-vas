@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAS Materiais de Construção - Tudo para Sua Obra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/vas logo horizontal (1).png" alt="VAS Materiais de Construção Logo">
+                <h1>VAS <span>Materiais</span></h1>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                  
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#location">Localização</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+  <!-- Hero Section -->
+<section class="hero" id="home">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/dji_fly_20240924_102534_264_1727189483544_video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo em background.
+    </video>
+
+    <div class="brick-animation" id="brick-animation"></div>
+    <div class="tile-animation" id="tile-animation"></div>
+    <div class="electric-animation" id="electric-animation"></div>
+    
+    <div class="hero-content">
+        <h2>Tudo para sua obra com os melhores preços</h2>
+        <p>Há mais de 20 anos levando qualidade e preço justo para sua construção. Atendemos desde pequenas reformas até grandes obras.</p>
+        <div class="hero-buttons">
+            <a href="#products" class="btn">Ver Produtos</a>
+            <a href="#promo" class="btn btn-secondary">Promoções</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner" id="promo">
+        <div class="promo-content">
+            <h2>PROMOÇÃO ESPECIAL - ATÉ 30% OFF</h2>
+            <p>Nesta semana temos descontos imperdíveis em materiais elétricos e hidráulicos. Aproveite!</p>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">05</div>
+                    <div class="countdown-label">Dias</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">12</div>
+                    <div class="countdown-label">Horas</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">45</div>
+                    <div class="countdown-label">Minutos</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">30</div>
+                    <div class="countdown-label">Segundos</div>
+                </div>
+            </div>
+            <a href="#products" class="btn btn-accent">Ver Ofertas</a>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-title">
+            <h2>Por que escolher a VAS Materiais?</h2>
+            <p>Oferecemos os melhores produtos e serviços para atender todas as necessidades da sua construção</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3>Entrega Rápida</h3>
+                <p>Entregamos em toda a região com frota própria e equipamentos adequados para descarregar materiais pesados.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3>Qualidade Garantida</h3>
+                <p>Trabalhamos apenas com marcas reconhecidas no mercado, garantindo a qualidade dos materiais para sua obra.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <h3>Melhores Preços</h3>
+                <p>Preços competitivos e condições especiais para pedidos grandes e clientes cadastrados.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-hard-hat"></i>
+                </div>
+                <h3>Assistência Técnica</h3>
+                <p>Nossa equipe especializada pode ajudar no cálculo de materiais e orientações técnicas para sua obra.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-hand-holding-heart"></i>
+                </div>
+                <h3>Parcelamento</h3>
+                <p>Parcelamos em até 12x sem juros no cartão e oferecemos condições especiais para clientes fiéis.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Atendimento Personalizado</h3>
+                <p>Nossa equipe está pronta para entender suas necessidades e oferecer a melhor solução para sua obra.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories" id="products">
+        <div class="section-title">
+            <h2>Nossos Produtos</h2>
+            <p>Selecione uma categoria para ver nossos produtos</p>
+        </div>
+        <div class="categories-container">
+            <div class="categories-tabs">
+                <button class="category-tab active" data-category="all">
+                    <i class="fas fa-boxes"></i> Todos
+                </button>
+                <button class="category-tab" data-category="alvenaria">
+                    <i class="fas fa-cubes"></i> Alvenaria
+                </button>
+                <button class="category-tab" data-category="hidraulica">
+                    <i class="fas fa-faucet"></i> Hidráulica
+                </button>
+                <button class="category-tab" data-category="eletrica">
+                    <i class="fas fa-bolt"></i> Elétrica
+                </button>
+                <button class="category-tab" data-category="pisos">
+                    <i class="fas fa-border-style"></i> Pisos e Revest.
+                </button>
+                <button class="category-tab" data-category="ferragens">
+                    <i class="fas fa-hammer"></i> Ferragens
+                </button>
+                <button class="category-tab" data-category="pintura">
+                    <i class="fas fa-paint-roller"></i> Pintura
+                </button>
+            </div>
+
+            <!-- Todos os Produtos -->
+            <div class="products-grid active" id="all-products">
+                <div class="product-card" data-category="alvenaria">
+                    <div class="product-image">
+                        <img src="img/IMG_1639 (2).png" alt="Tijolos">
+                        <span class="product-badge">Oferta</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>Tijolo Baiano 8 Furos</h3>
+                        <span class="product-category">Alvenaria</span>
+                        <div class="product-price">R$ 0,89 <span>R$ 0,99</span></div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pisos">
+                    <div class="product-image">
+                        <img src="img/IMG_1653.png" alt="Pisos">
+                        <span class="product-badge">Novidade</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>Piso Cerâmico 60x60cm</h3>
+                        <span class="product-category">Pisos e Revest.</span>
+                        <div class="product-price">R$ 34,90/m²</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="hidraulica">
+                    <div class="product-image">
+                        <img src="img/IMG_1663 (1).png" alt="Tubos">
+                    </div>
+                    <div class="product-content">
+                        <h3>Tubo PVC 100mm 6m</h3>
+                        <span class="product-category">Hidráulica</span>
+                        <div class="product-price">R$ 49,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="eletrica">
+                    <div class="product-image">
+                        <img src="img/IMG_1697 (1).png" alt="Fios">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cabo Flexível 2,5mm 100m</h3>
+                        <span class="product-category">Elétrica</span>
+                        <div class="product-price">R$ 189,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="ferragens">
+                    <div class="product-image">
+                        <img src="img/IMG_1708.png" alt="Portas">
+                    </div>
+                    <div class="product-content">
+                        <h3>Porta de Madeira Maciça</h3>
+                        <span class="product-category">Ferragens</span>
+                        <div class="product-price">R$ 399,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="pintura">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Tintas">
+                    </div>
+                    <div class="product-content">
+                        <h3>Tinta Acrílica Fosco 18L</h3>
+                        <span class="product-category">Pintura</span>
+                        <div class="product-price">R$ 149,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alvenaria -->
+            <div class="products-grid" id="alvenaria-products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1596541223131-5a2a0a5d0a89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Tijolos">
+                        <span class="product-badge">Oferta</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>Tijolo Baiano 8 Furos</h3>
+                        <span class="product-category">Alvenaria</span>
+                        <div class="product-price">R$ 0,89 <span>R$ 0,99</span></div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a671?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Blocos">
+                    </div>
+                    <div class="product-content">
+                        <h3>Bloco de Concreto 14x19x39cm</h3>
+                        <span class="product-category">Alvenaria</span>
+                        <div class="product-price">R$ 2,49</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Cimento">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cimento CP II 50kg</h3>
+                        <span class="product-category">Alvenaria</span>
+                        <div class="product-price">R$ 32,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hidráulica -->
+            <div class="products-grid" id="hidraulica-products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Tubos">
+                    </div>
+                    <div class="product-content">
+                        <h3>Tubo PVC 100mm 6m</h3>
+                        <span class="product-category">Hidráulica</span>
+                        <div class="product-price">R$ 49,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581092918051-5a0a9e4d1e7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Registros">
+                    </div>
+                    <div class="product-content">
+                        <h3>Registro de Pressão 1/2"</h3>
+                        <span class="product-category">Hidráulica</span>
+                        <div class="product-price">R$ 12,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Conexões">
+                    </div>
+                    <div class="product-content">
+                        <h3>Joelho PVC 90° 1/2"</h3>
+                        <span class="product-category">Hidráulica</span>
+                        <div class="product-price">R$ 3,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Elétrica -->
+            <div class="products-grid" id="eletrica-products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Fios">
+                    </div>
+                    <div class="product-content">
+                        <h3>Cabo Flexível 2,5mm 100m</h3>
+                        <span class="product-category">Elétrica</span>
+                        <div class="product-price">R$ 189,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Disjuntores">
+                    </div>
+                    <div class="product-content">
+                        <h3>Disjuntor Bipolar 30A</h3>
+                        <span class="product-category">Elétrica</span>
+                        <div class="product-price">R$ 29,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Tomadas">
+                    </div>
+                    <div class="product-content">
+                        <h3>Tomada 10A 2P+T</h3>
+                        <span class="product-category">Elétrica</span>
+                        <div class="product-price">R$ 8,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pisos e Revestimentos -->
+            <div class="products-grid" id="pisos-products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1622372738946-62e02505feb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Pisos">
+                        <span class="product-badge">Novidade</span>
+                    </div>
+                    <div class="product-content">
+                        <h3>Piso Cerâmico 60x60cm</h3>
+                        <span class="product-category">Pisos e Revest.</span>
+                        <div class="product-price">R$ 34,90/m²</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1622372738946-62e02505feb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Porcelanato">
+                    </div>
+                    <div class="product-content">
+                        <h3>Porcelanato 80x80cm</h3>
+                        <span class="product-category">Pisos e Revest.</span>
+                        <div class="product-price">R$ 59,90/m²</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1622372738946-62e02505feb3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Pastilhas">
+                    </div>
+                    <div class="product-content">
+                        <h3>Pastilha para Banheiro 30x30cm</h3>
+                        <span class="product-category">Pisos e Revest.</span>
+                        <div class="product-price">R$ 42,90/m²</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferragens -->
+            <div class="products-grid" id="ferragens-products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Portas">
+                    </div>
+                    <div class="product-content">
+                        <h3>Porta de Madeira Maciça</h3>
+                        <span class="product-category">Ferragens</span>
+                        <div class="product-price">R$ 399,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Janelas">
+                    </div>
+                    <div class="product-content">
+                        <h3>Janela de Alumínio 1,0x1,2m</h3>
+                        <span class="product-category">Ferragens</span>
+                        <div class="product-price">R$ 289,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Fechaduras">
+                    </div>
+                    <div class="product-content">
+                        <h3>Fechadura para Porta</h3>
+                        <span class="product-category">Ferragens</span>
+                        <div class="product-price">R$ 49,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pintura -->
+            <div class="products-grid" id="pintura-products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Tintas">
+                    </div>
+                    <div class="product-content">
+                        <h3>Tinta Acrílica Fosco 18L</h3>
+                        <span class="product-category">Pintura</span>
+                        <div class="product-price">R$ 149,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Rolos">
+                    </div>
+                    <div class="product-content">
+                        <h3>Rolo de Pintura Liso 15cm</h3>
+                        <span class="product-category">Pintura</span>
+                        <div class="product-price">R$ 12,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1606744837616-56c9a5c6a6eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Massas">
+                    </div>
+                    <div class="product-content">
+                        <h3>Massa Corrida 20kg</h3>
+                        <span class="product-category">Pintura</span>
+                        <div class="product-price">R$ 59,90</div>
+                        <div class="product-actions">
+                            <a href="#" class="btn">Detalhes</a>
+                            <a href="#" class="btn btn-accent">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>Sobre Nós</h2>
+            <p>Conheça nossa história e nossa missão</p>
+        </div>
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Mais de 20 anos construindo sonhos</h2>
+                <p>A VAS Materiais nasceu em 2002 com o objetivo de fornecer materiais de construção de qualidade para a região. Começamos como uma pequena loja de bairro e hoje somos referência no setor, com um amplo estoque e equipe especializada.</p>
+                <p>Nossa missão é oferecer os melhores produtos com preços justos, atendimento personalizado e soluções completas para sua obra, seja ela grande ou pequena.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Anos no mercado</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Clientes satisfeitos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Marcas parceiras</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24h</div>
+                        <div class="stat-label">Entrega expressa</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="img/VAS.png" alt="Loja VAS Materiais">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-title">
+            <h2>O que dizem nossos clientes</h2>
+            <p>Depoimentos de quem já construiu com a gente</p>
+        </div>
+        <div class="testimonials-slider">
+            <div class="testimonial-item">
+                <div class="testimonial-avatar">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente 1">
+                </div>
+                <p class="testimonial-content">"Comprei todos os materiais para minha casa na VAS e fui muito bem atendido. O orçamento foi o mais em conta que encontrei e a entrega foi super rápida!"</p>
+                <h4 class="testimonial-author">Roberto Silva</h4>
+                <p class="testimonial-position">Proprietário - Casa Própria</p>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-avatar">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente 2">
+                </div>
+                <p class="testimonial-content">"Como arquiteta, sempre indico a VAS para meus clientes. A variedade de produtos e o conhecimento técnico da equipe fazem toda diferença nos meus projetos."</p>
+                <h4 class="testimonial-author">Ana Paula Mendes</h4>
+                <p class="testimonial-position">Arquiteta - AMP Arquitetura</p>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-avatar">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Cliente 3">
+                </div>
+                <p class="testimonial-content">"Há 10 anos sou cliente da VAS. Já fiz várias reformas e sempre encontro o que preciso com qualidade e preço justo. A equipe conhece pelo nome e sabe exatamente o que recomendar."</p>
+                <h4 class="testimonial-author">Carlos Eduardo</h4>
+                <p class="testimonial-position">Construtor - Eduardo & Filhos</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Fale Conosco</h2>
+            <p>Estamos prontos para atender suas necessidades</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Entre em contato</h2>
+                <p>Tem dúvidas, orçamentos ou sugestões? Nossa equipe está pronta para te ajudar da melhor forma possível.</p>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Endereço</h3>
+                        <p>Rua das Construções, 123 - Centro<br>Belo Horizonte/MG - CEP 30123-456</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Telefone</h3>
+                        <p><a href="tel:+553132123456">(31) 3212-3456</a></p>
+                        <p><a href="tel:+5531998765432">(31) 99876-5432</a> (WhatsApp)</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p><a href="mailto:contato@vasmateriais.com.br">contato@vasmateriais.com.br</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Horário de Funcionamento</h3>
+                        <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 13h<br>Domingo: Fechado</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Envie sua mensagem</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" class="form-control" required>
+                            <option value="">Selecione...</option>
+                            <option value="orcamento">Orçamento</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map" id="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.715516094518!2d-43.94066892437145!3d-19.93593098146643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6999ed62daafd%3A0x5665670781743a7e!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1689871427599!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Assine nossa newsletter</h2>
+            <p>Receba promoções exclusivas, dicas de construção e novidades diretamente no seu email.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Digite seu melhor email" class="newsletter-input" required>
+                <button type="submit" class="newsletter-btn">Assinar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Sobre Nós</h3>
+                <p>A VAS Materiais é uma loja especializada em materiais de construção, com mais de 20 anos de experiência no mercado, oferecendo qualidade e preço justo.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>Links Úteis</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Início</a></li>
+                    <li><a href="#products"><i class="fas fa-chevron-right"></i> Produtos</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> Sobre Nós</a></li>
+                
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contato</a></li>
+                    <li><a href="#location"><i class="fas fa-chevron-right"></i> Localização</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Categorias</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Alvenaria</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Hidráulica</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Elétrica</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Pisos e Revest.</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Ferragens</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Pintura</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Formas de Pagamento</h3>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-diners-club"></i>
+                    <i class="fab fa-cc-discover"></i>
+                    <i class="fas fa-barcode"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <h3 style="margin-top: 1.5rem;">Segurança</h3>
+                <div class="security-badges">
+                    <img src="https://via.placeholder.com/80x50" alt="Site Seguro">
+                    <img src="https://via.placeholder.com/80x50" alt="Google Safe Browsing">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 VAS Materiais de Construção. Todos os direitos reservados. CNPJ: 12.345.678/0001-99</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5531998765432" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Fale conosco</span>
+    </a>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+        <div class="action-btn call">
+            <i class="fas fa-phone-alt"></i>
+            <span class="action-tooltip">Ligar</span>
+        </div>
+        <div class="action-btn email">
+            <i class="fas fa-envelope"></i>
+            <span class="action-tooltip">Email</span>
+        </div>
+        <div class="action-btn quote">
+            <i class="fas fa-file-invoice-dollar"></i>
+            <span class="action-tooltip">Orçamento</span>
+        </div>
+        <div class="action-btn community">
+            <i class="fas fa-hands-helping"></i>
+            <span class="action-tooltip">Programas Sociais</span>
+        </div>
+    </div>
+
+   
+</body>
+</html>
