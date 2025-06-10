@@ -1225,4 +1225,10 @@
                 font-size: 2rem;
             }
         }
-   
+   .success-message {
+  display: none;
+  color: rgb(244, 28, 28);
+  margin-top: 15px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
