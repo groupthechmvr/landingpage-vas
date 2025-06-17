@@ -99,13 +99,21 @@
 }
 
 .hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* faz o vídeo preencher e cortar corretamente */
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .hero-video {
+    height: auto;
+    min-height: 110vh;
+    object-fit: cover; /* pode mudar pra 'cover', 'contain', ou 'fill' */
+  }
 }
 
 
@@ -1227,8 +1235,9 @@
         }
    .success-message {
   display: none;
-  color: rgb(244, 28, 28);
+  color: rgb(0, 153, 51);
   margin-top: 15px;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
+  
 }
